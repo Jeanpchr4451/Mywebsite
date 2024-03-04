@@ -1,0 +1,22 @@
+.clock-container {
+    display: flex;
+    justify-content: center;
+}
+
+.clock {
+text-align:center;
+font-size: 20px;
+color:white;
+margin-top:10px ;
+margin-bottom: 0px;
+border: 1px solid #ddd;
+padding: 5px;
+border-radius: 100px;
+display: inline-block;
+width: 150px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+background-image: -webkit-linear-gradient(bottom right, #1fd1f9 0%, #b621fe 74%);
+background-image: -moz-linear-gradient(bottom right, #1fd1f9 0%, #b621fe 74%);
+background-image: -o-linear-gradient(bottom right, #1fd1f9 0%, #b621fe 74%);
+background-image: linear-gradient(to top left, #1fd1f9 0%, #b621fe 74%);
+}

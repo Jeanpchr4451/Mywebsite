@@ -1,0 +1,10 @@
+.btn{
+    background-color: #1fd1f9;
+  background-image: -webkit-linear-gradient(bottom right, #1fd1f9 0%, #b621fe 74%);
+  background-image: -moz-linear-gradient(bottom right, #1fd1f9 0%, #b621fe 74%);
+  background-image: -o-linear-gradient(bottom right, #1fd1f9 0%, #b621fe 74%);
+  background-image: linear-gradient(to top left, #1fd1f9 0%, #b621fe 74%);
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+  }

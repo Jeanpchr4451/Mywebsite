@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home screen</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="image.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a href="about.html" class="custom-btn btn-9">About Me</a>
+          </li>
+          <li class="nav-item">
+              <a href="contact.html" class="custom-btn btn-9">Contact</a>
+          </li>
+          <li class="nav-item">
+              <a href="resume.html" class="custom-btn btn-9">My Work</a>
+          </li>
+      </ul>
+  </div>
+ </nav>
+  <div class="Two Paragraphs">
+    <h1>Welcome to My Website</h1>
+    <p>
+       As a senior at Kean University immersed in the dynamic world of computer science, 
+      I've discovered an exhilarating passion for the intricate languages of HTML 
+      and CSS. Crafting this very website has been a revelation, each line of 
+      code a brushstroke in the canvas of my creativity. My journey through the 
+      realms of Java and Python has equipped me with a versatile toolkit, empowering 
+      me to bring concepts to life and solve complex problems with elegant solutions. 
+      Beyond the digital landscape, you'll often find me on the basketball court, 
+      where the rhythm of the game mirrors the precision and strategy inherent in 
+      coding. And when I seek respite from the rigors of academia, I delve into 
+      the mesmerizing realms of video games, where imagination knows no bounds, 
+      and every pixel holds the promise of adventure.</p>
+ 
+  
+  <img src="images/HeadShot.jpg" alt="HeadShot" class="img-fluid smaller-image center">
+
+  <div class="clock-container">
+    <div class="clock" id="clockNewYork"></div>
+  </div>
+  
+    <p>In the bustling corridors of Kean University, I am more than a student of 
+      computer science. I am a seeker of knowledge, a builder of worlds both digital
+      and physical. With each line of code, I bridge the gap between creativity and 
+      functionality, weaving together the threads of logic and design to create 
+      immersive user experiences. But amidst the exhilarating whirl of algorithms 
+      and syntax, I remain grounded in the simple joys of life like dribbling a basketball
+      on the court, lost in the rhythm of the game, or diving headfirst into the 
+      captivating landscapes of video game realms, where every quest is a journey of 
+      discovery. As I approach the culmination of my academic journey, I carry with 
+      me a profound appreciation for the limitless possibilities of technology and 
+      the enduring thrill of exploration.</p>
+</div>
+<!-- Footer -->
+<footer class=" text-black text-center py-3">
+    &copy; 2024 Chris's Website | All rights reserved
+</footer>
+<!-- clock -->
+<script>
+  function updateClock(timezone, elementId) {
+      var now = new Date();
+      var options = { timeZone: timezone, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+      var time = now.toLocaleTimeString('en-US', options);
+      document.getElementById(elementId).textContent = time;
+  }
+
+  setInterval(function() {
+      updateClock('America/New_York', 'clockNewYork');
+  }, 1000);
+</script>
+<!-- alert -->
+<script>
+  // Display an alert box when the page is loaded
+  window.onload = function() {
+      alert("Thank you for taking your time to view my website");
+  };
+</script>
+
+  <!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
